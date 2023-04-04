@@ -3,7 +3,8 @@
 @section('content')
 
 <div id="clear">
-<p>山田さん、</p>
+<p>田中さん、</p>
+>>>>>>> sugahara0404
 <p>ようこそ！DAWNSNSへ！</p>
 <p>ユーザー登録が完了しました。</p>
 <p>さっそく、ログインをしてみましょう。</p>
