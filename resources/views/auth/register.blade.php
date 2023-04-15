@@ -2,27 +2,29 @@
 
 @section('content')
 
-{!! Form::open() !!}
+<form method="POST" action="/register" >
+
+@csrf
 
 <h2>新規ユーザー登録</h2>
 
-{{ Form::label('ユーザー名') }}
-{{ Form::text('username',null,['class' => 'input']) }}
+<label class="ユーザー名"></label>
+<input class="input" name="username" type="text">
 
-{{ Form::label('メールアドレス') }}
-{{ Form::text('mail',null,['class' => 'input']) }}
+<label class="メールアドレス"></label>
+<input class="input" name="mail" type="text">
 
-{{ Form::label('パスワード') }}
-{{ Form::text('password',null,['class' => 'input']) }}
+<label class="パスワード"></label>
+<input class="input" name="password" type="text">
 
-{{ Form::label('パスワード確認') }}
-{{ Form::text('password-confirm',null,['class' => 'input']) }}
+<label class="パスワード確認"></label>
+<input class="input" name="password-confirm" type="text">
 
-{{ Form::submit('登録') }}
+<input type="submit" value="登録">
 
 <p><a href="/login">ログイン画面へ戻る</a></p>
 
-{!! Form::close() !!}
+</form>
 
 
 @endsection
